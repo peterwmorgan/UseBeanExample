@@ -1,0 +1,19 @@
+#maincontainer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#contentwrapper {
+	float: left;
+	width: 100%;
+}
+
+#maincolumn {
+	margin-top: 12px;
+}
+
+.text {
+	margin: 0 0 15px 0;
+}
+
+* html #maincolumn { margin-top: 10px; }

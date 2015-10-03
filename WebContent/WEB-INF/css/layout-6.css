@@ -1,0 +1,28 @@
+#maincontainer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#contentwrapper {
+	float: left;
+	width: 100%;
+}
+
+#maincolumn {
+	margin-top: 12px;
+	margin-right: 200px;
+}
+
+.text {
+	margin: 0 15px 15px 0;
+}
+
+#rightcolumn {
+	margin-top: 15px;
+	float: left;
+	width: 200px;
+	margin-left: -200px;
+}
+
+* html #maincolumn { margin-top: 10px; }
+* html #rightcolumn { margin-top: 13px; }

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="UseBeanExample">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../Eclipse/"/>
+    <property name="JpaProject.location" value="../JpaProject"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="Web App Libraries.libraryclasspath"/>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="JpaProject.classpath">
+        <pathelement location="${JpaProject.location}/build/classes"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/ojdbc14.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/javax/javax.persistence_2.1.0.v201304241213.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/aopalliance-repackaged-2.4.0-b10.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/asm-debug-all-5.0.2.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/com.sun.tools.xjc_2.2.0.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/com.sun.xml.bind_2.2.0.v201004141950.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/eclipselink.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/hk2-api-2.4.0-b10.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/hk2-locator-2.4.0-b10.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/hk2-utils-2.4.0-b10.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/javassist-3.18.1-GA.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/javax.activation_1.1.0.v201108011116.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/javax.annotation-api-1.2.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/javax.inject-2.4.0-b10.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/javax.mail_1.4.0.v201005080615.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/javax.persistence.source_2.1.0.v201304241213.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/javax.persistence_2.1.0.v201304241213.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/javax.servlet-api-3.0.1.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/javax.ws.rs-api-2.0.1.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/javax.xml.bind_2.2.0.v201105210648.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/javax.xml.stream_1.0.1.v201004272200.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/jaxb-api-2.2.7.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/jersey-client.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/jersey-common.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/jersey-container-servlet.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/jersey-container-servlet-core.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/jersey-guava-2.17.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/jersey-media-jaxb.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/jersey-server.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/mysql-connector-java-5.1.20-bin.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/org.apache.servicemix.specs.jsr311-api-1.0-1.2.0.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/org.eclipse.persistence.jpa.modelgen.source_2.5.2.v20140319-9ad6abd.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/org.eclipse.persistence.jpa.modelgen_2.5.2.v20140319-9ad6abd.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/org.eclipse.persistence.jpars.source_2.5.2.v20140319-9ad6abd.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/org.eclipse.persistence.jpars_2.5.2.v20140319-9ad6abd.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/org.osgi.core-4.2.0.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/osgi-resource-locator-1.0.1.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/persistence-api-1.0.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/sqljdbc4.jar"/>
+        <pathelement location="${JpaProject.location}/../ProjectLibs/eclipselink/validation-api-1.1.0.Final.jar"/>
+    </path>
+    <path id="UseBeanExample.classpath">
+        <pathelement location="build/classes"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="JpaProject.classpath"/>
+        <pathelement location="../ProjectLibs/javax/javax.persistence_2.1.0.v201304241213.jar"/>
+        <pathelement location="../ProjectLibs/javax/javax.servlet-api-3.0.1.jar"/>
+        <pathelement location="../ProjectLibs/JSTL/jstl-1.2.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="build/classes"/>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="build/classes"/>
+    </target>
+    <target depends="clean" name="cleanall">
+        <ant antfile="build.xml" dir="${JpaProject.location}" inheritAll="false" target="clean"/>
+    </target>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects">
+        <ant antfile="build.xml" dir="${JpaProject.location}" inheritAll="false" target="build-project">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+    </target>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="UseBeanExample.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="Departments">
+        <java classname="net.netxtra.backingbean.Departments" failonerror="true" fork="yes">
+            <classpath refid="UseBeanExample.classpath"/>
+        </java>
+    </target>
+    <target name="Countries">
+        <java classname="net.netxtra.backingbean.Countries" failonerror="true" fork="yes">
+            <classpath refid="UseBeanExample.classpath"/>
+        </java>
+    </target>
+</project>
