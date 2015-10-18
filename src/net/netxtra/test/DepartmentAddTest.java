@@ -1,4 +1,7 @@
 package net.netxtra.test;
+/** Unit test to check that departments can be successfully added
+ * 
+ */
 import static org.junit.Assert.*;
 
 import java.util.List;
