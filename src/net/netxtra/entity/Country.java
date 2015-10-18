@@ -7,6 +7,7 @@ import javax.persistence.*;
 /**
  * The persistent class for the COUNTRIES database table.
  * 
+ * @date 18-October-2015
  */
 @Entity
 @Table(name="COUNTRIES")
