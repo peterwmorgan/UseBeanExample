@@ -1,5 +1,6 @@
 package net.netxtra.test;
 /** Unit test to check that departments can be successfully added
+ *  @date November 2015
  * 
  */
 import static org.junit.Assert.*;
