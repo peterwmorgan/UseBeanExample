@@ -1,5 +1,8 @@
 package net.netxtra.controller;
 
+/** @author a.n.author
+ * 	@date April 2016
+ */
 import java.util.Locale;
 
 import com.sun.corba.se.impl.javax.rmi.CORBA.Util;
