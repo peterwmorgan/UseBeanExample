@@ -18,11 +18,9 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
+ * @author Pete M
  * 
- */
-
-/**
- * @author Pete
+ * @Date 02/10/2016
  *
  */
 public class DepartmentAddTest {
